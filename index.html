@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./index.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+   <link href="/media/favicon.ico" rel="icon" type="image/x-icon" />
+   <title>Password Generator</title>
+</head>
+
+<body>
+   <div class="templateParent">
+      <div class="template">
+         <h3>Password Generator</h3>
+         <div class="generatedPasswordDiv">
+            <div class="generatedPassword">
+               <p class="password"></p>
+            </div>
+            <div class="copyPassword">
+               <img class="copyIcon" src="./media/copyIconGreen.png" alt="">
+            </div>
+         </div>
+         <div class="generatorDiv">
+            <div class="changeCharacterLength">
+               <p class="characterLength">Character Length</p>
+               <p class="lengthDisplay"></p>
+               <input type="range" name="" min="6" max="32" value="12" id="characterLengthControl">
+            </div>
+            <div class="checkboxes">
+               <ul>
+                  <li>
+                     <input name="cssCheckbox" id="demo_opt_1" type="checkbox" class="css-checkbox" checked>
+                     <label for="demo_opt_1">Include Uppercase Letters</label>
+                  </li>
+                  <li>
+                     <input name="cssCheckbox" id="demo_opt_2" type="checkbox" class="css-checkbox" checked>
+                     <label for="demo_opt_2">Include Lowercase Letters</label>
+                  </li>
+                  <li>
+                     <input name="cssCheckbox" id="demo_opt_3" type="checkbox" class="css-checkbox" checked>
+                     <label for="demo_opt_3">Include Numbers</label>
+                  </li>
+                  <li>
+                     <input name="cssCheckbox" id="demo_opt_4" type="checkbox" class="css-checkbox" checked>
+                     <label for="demo_opt_4">Include Symbols</label>
+                  </li>
+               </ul>
+            </div>
+            <div class="strength">
+               <div class="strengthScreen">
+                  <div class="stParent">
+                     <p class="strengthPara">STRENGTH</p>
+                  </div>
+                  <div class="difficultyLevelParent">
+                     <p class="difficultyLevel"></p>
+                  </div>
+                  <ul>
+                     <li>
+                        <div class="levels" id="level1"></div>
+                     </li>
+                     <li>
+                        <div class="levels" id="level2"></div>
+                     </li>
+                     <li>
+                        <div class="levels" id="level3"></div>
+                     </li>
+                     <li>
+                        <div class="levels" id="level4"></div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="generate">
+               <button class="generateButton">GENERATE<span class="arrow">→</span></button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script src="app.js"></script>
+</body>
+
+</html>

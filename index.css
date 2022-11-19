@@ -130,19 +130,6 @@ body {
    background: white;
    cursor: pointer;
 }
-#characterLengthControl::-moz-slider-thumb {
-   -webkit-appearance: none;
-   appearance: none;
-   width: 25px;
-   height: 25px;
-   border-radius: 50%;
-   background: white;
-   cursor: pointer;
-}
-#characterLengthControl::-moz-slider-thumb:active {
-   background: #17181c;
-   border: 2px solid #a6ffaf;
-}
 
 #characterLengthControl::-webkit-slider-thumb:active {
    background: #17181c;

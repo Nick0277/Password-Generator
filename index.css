@@ -57,8 +57,6 @@ body {
    justify-content: center;
    align-items: center;
    position: absolute;
-   width: 450px;
-   height: 620px;
    top: 45%;
    left: 50%;
    transform: translate(-50%, -50%);
@@ -67,6 +65,7 @@ body {
 .template h3 {
    font-family: 'Roboto', sans-serif;
    color: #fdc500;
+   opacity: 0.7;
 }
 
 .templateParent {
@@ -130,6 +129,19 @@ body {
    border-radius: 50%;
    background: white;
    cursor: pointer;
+}
+#characterLengthControl::-moz-slider-thumb {
+   -webkit-appearance: none;
+   appearance: none;
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+   background: white;
+   cursor: pointer;
+}
+#characterLengthControl::-moz-slider-thumb:active {
+   background: #17181c;
+   border: 2px solid #a6ffaf;
 }
 
 #characterLengthControl::-webkit-slider-thumb:active {
@@ -365,7 +377,7 @@ body {
 
    .generatorDiv {
       width: 380px;
-      height: 473px;
+      height: 480px;
    }
 
    .strengthScreen {
@@ -385,12 +397,12 @@ body {
 @media screen and (max-width: 375px) {
    .generatedPasswordDiv {
       width: 350px;
-      height: 60px;
+      height: 65px;
    }
 
    .generatorDiv {
       width: 350px;
-      height: 460px;
+      height: 475px;
    }
 
    .strengthScreen {
